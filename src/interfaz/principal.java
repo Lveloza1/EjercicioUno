@@ -34,13 +34,15 @@ public class principal extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtPersonaUno = new javax.swing.JTextField();
+        txtPersonaDos = new javax.swing.JTextField();
+        txtPersonaTres = new javax.swing.JTextField();
+        txtPorcentajeUno = new javax.swing.JTextField();
+        txtPorcentajeDos = new javax.swing.JTextField();
+        txtPorcentajeTres = new javax.swing.JTextField();
+        cmdCalcular = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        txtTotal = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,55 +52,75 @@ public class principal extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 230, 40));
 
         jLabel2.setText("persona 1");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         jLabel3.setText("Persona 2");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, -1, -1));
 
         jLabel4.setText("Persona 3");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, -1, -1));
 
         jLabel5.setText("%");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
 
         jLabel6.setText("%");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, -1, -1));
 
         jLabel7.setText("%");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
+        getContentPane().add(txtPersonaUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 60, -1));
+        getContentPane().add(txtPersonaDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 60, -1));
 
-        jTextField1.setText("jTextField1");
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, -1, -1));
-
-        jTextField2.setText("jTextField2");
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, -1, -1));
-
-        jTextField3.setText("jTextField3");
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        txtPersonaTres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                txtPersonaTresActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, -1, -1));
+        getContentPane().add(txtPersonaTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, 60, -1));
+        getContentPane().add(txtPorcentajeUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 60, -1));
+        getContentPane().add(txtPorcentajeDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 60, -1));
+        getContentPane().add(txtPorcentajeTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 60, -1));
 
-        jTextField4.setText("jTextField4");
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, -1));
+        cmdCalcular.setText("Calcular");
+        cmdCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdCalcularActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, -1, -1));
 
-        jTextField5.setText("jTextField5");
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, -1, -1));
-
-        jTextField6.setText("jTextField6");
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, -1, -1));
-
-        jButton1.setText("Calcular");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, -1, -1));
+        jLabel8.setText("Total invertido");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+        getContentPane().add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 60, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void txtPersonaTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPersonaTresActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_txtPersonaTresActionPerformed
+
+    private void cmdCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCalcularActionPerformed
+       
+       double total;
+       double pers1, pers2, pers3;
+       double porc1, porc2, porc3;
+        
+     pers1=Double.parseDouble(txtPersonaUno.getText());
+     pers2=Double.parseDouble(txtPersonaDos.getText());
+     pers3=Double.parseDouble(txtPersonaTres.getText());
+     total=Double.parseDouble(txtTotal.getText());
+       
+      
+       
+       
+       
+       
+       
+       
+       
+        
+    }//GEN-LAST:event_cmdCalcularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,7 +159,7 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton cmdCalcular;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -145,11 +167,13 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField txtPersonaDos;
+    private javax.swing.JTextField txtPersonaTres;
+    private javax.swing.JTextField txtPersonaUno;
+    private javax.swing.JTextField txtPorcentajeDos;
+    private javax.swing.JTextField txtPorcentajeTres;
+    private javax.swing.JTextField txtPorcentajeUno;
+    private javax.swing.JTextField txtTotal;
     // End of variables declaration//GEN-END:variables
 }
