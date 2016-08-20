@@ -53,36 +53,36 @@ public class principal extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 230, 40));
 
         jLabel2.setText("persona 1");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
         jLabel3.setText("Persona 2");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, -1, -1));
 
         jLabel4.setText("Persona 3");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 90, -1, -1));
 
         jLabel5.setText("%");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
 
         jLabel6.setText("%");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, -1, -1));
 
         jLabel7.setText("%");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, -1, -1));
 
         txtPersonaUno.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtPersonaUnoKeyTyped(evt);
             }
         });
-        getContentPane().add(txtPersonaUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 60, -1));
+        getContentPane().add(txtPersonaUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 60, -1));
 
         txtPersonaDos.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtPersonaDosKeyTyped(evt);
             }
         });
-        getContentPane().add(txtPersonaDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 60, -1));
+        getContentPane().add(txtPersonaDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 60, -1));
 
         txtPersonaTres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,16 +94,16 @@ public class principal extends javax.swing.JFrame {
                 txtPersonaTresKeyTyped(evt);
             }
         });
-        getContentPane().add(txtPersonaTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 60, -1));
+        getContentPane().add(txtPersonaTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 60, -1));
 
         txtPorcentajeUno.setEditable(false);
-        getContentPane().add(txtPorcentajeUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 60, -1));
+        getContentPane().add(txtPorcentajeUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 60, -1));
 
         txtPorcentajeDos.setEditable(false);
-        getContentPane().add(txtPorcentajeDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 60, -1));
+        getContentPane().add(txtPorcentajeDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, 60, -1));
 
         txtPorcentajeTres.setEditable(false);
-        getContentPane().add(txtPorcentajeTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 60, -1));
+        getContentPane().add(txtPorcentajeTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 130, 60, -1));
 
         cmdCalcular.setText("Calcular");
         cmdCalcular.addActionListener(new java.awt.event.ActionListener() {
@@ -114,14 +114,15 @@ public class principal extends javax.swing.JFrame {
         getContentPane().add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, -1, -1));
 
         jLabel8.setText("Total invertido");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
 
+        txtTotal.setEditable(false);
         txtTotal.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTotalKeyTyped(evt);
             }
         });
-        getContentPane().add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 60, -1));
+        getContentPane().add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 60, -1));
 
         cmdBorrar.setText("Borrar");
         cmdBorrar.addActionListener(new java.awt.event.ActionListener() {
@@ -139,19 +140,13 @@ public class principal extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPersonaTresActionPerformed
 
     private void cmdCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCalcularActionPerformed
-       
-       double total;
-       double pers1, pers2, pers3;
+       double suma;
+       int pers1, pers2, pers3;
        double porc1, porc2, porc3;
+       String res1, res2, res3, total;
      
-    if(txtTotal.getText().trim().isEmpty()){
-        JOptionPane.showMessageDialog(this, "Digite la cantidad número tres","error", JOptionPane.ERROR_MESSAGE);  
-        txtTotal.requestFocusInWindow(); 
-         txtTotal.selectAll();   
-//validación de vacio en total
-     }
-       
-    else if(txtPersonaUno.getText().trim().isEmpty()){
+
+    if(txtPersonaUno.getText().trim().isEmpty()){
          JOptionPane.showMessageDialog(this, "Digite la cantidad número Uno","error", JOptionPane.ERROR_MESSAGE);
          txtPersonaUno.requestFocusInWindow();
          txtPersonaUno.selectAll();
@@ -170,17 +165,49 @@ public class principal extends javax.swing.JFrame {
          txtPersonaTres.selectAll();    
 ////validación de vacio en persona 3
      }
-     else{
+    
      
-     pers1=Double.parseDouble(txtPersonaUno.getText());
-     pers2=Double.parseDouble(txtPersonaDos.getText());
-     pers3=Double.parseDouble(txtPersonaTres.getText());
-     total=Double.parseDouble(txtTotal.getText());
- // convertir los labels en enteros      
+     else{
+  
+     pers1=Integer.parseInt(txtPersonaUno.getText());
+     pers2=Integer.parseInt(txtPersonaDos.getText());
+     pers3=Integer.parseInt(txtPersonaTres.getText());
+ // convertir los labels en enteros     
  
- 
+   if(pers1==pers2) {
+       JOptionPane.showMessageDialog(this, "Las cantidades individuales deben ser distintas","error", JOptionPane.ERROR_MESSAGE);  
+        txtPersonaUno.requestFocusInWindow(); 
+        txtPersonaUno.selectAll();  
+       }  
+
+     else if(pers2==pers3){
+     JOptionPane.showMessageDialog(this, "Las cantidades individuales deben ser distintas","error", JOptionPane.ERROR_MESSAGE);  
+        txtPersonaDos.requestFocusInWindow(); 
+        txtPersonaDos.selectAll();              
+       }      
+ else if(pers1==pers3){
+     JOptionPane.showMessageDialog(this, "Las cantidades individuales deben ser distintas","error", JOptionPane.ERROR_MESSAGE);  
+        txtPersonaUno.requestFocusInWindow(); 
+        txtPersonaUno.selectAll();              
+       }     
+suma=(pers1+pers2+pers3); 
+   porc1=(pers1/suma)*100;
+   porc2=(pers2/suma)*100;
+   porc3=(pers3/suma)*100;
+
  //INICIAR OPERACIÓN
-      
+     res1=String.valueOf(porc1);
+    txtPorcentajeUno.setText (res1);    
+    
+    res2=String.valueOf(porc2);
+    txtPorcentajeDos.setText (res2);  
+    
+    res3=String.valueOf(porc3);
+    txtPorcentajeTres.setText(res3); 
+
+    total=String.valueOf(suma);
+    txtTotal.setText(total);
+ //convertir resultados a string  
    }
 
     }//GEN-LAST:event_cmdCalcularActionPerformed
@@ -190,18 +217,15 @@ public class principal extends javax.swing.JFrame {
      txtPersonaUno.setText("");
      txtPersonaDos.setText("");
      txtPersonaTres.setText("");
-     txtPersonaUno.requestFocusInWindow();
+     txtPorcentajeUno.setText("");
+     txtPorcentajeDos.setText("");
+     txtPorcentajeTres.setText("");
+     txtTotal.requestFocusInWindow();
  //Función de Borrar    
     }//GEN-LAST:event_cmdBorrarActionPerformed
 
     private void txtTotalKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTotalKeyTyped
-        char c=evt.getKeyChar(); 
-       
-          if(!Character.isDigit(c)) { 
-              getToolkit().beep();    
-              evt.consume(); 
-          }  
-          //validación de caracteres en total
+
     }//GEN-LAST:event_txtTotalKeyTyped
 
     private void txtPersonaUnoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPersonaUnoKeyTyped
